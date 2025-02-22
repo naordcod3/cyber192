@@ -2,14 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/shield-icon.svg" />
+    <link rel="icon" type="image/png" href="/shield-icon-512.png" sizes="512x512" />
+    <link rel="icon" type="image/png" href="/shield-icon-192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/shield-icon-32.png" sizes="32x32" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/assets/index-D_N7VzbB.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DJBnFEDN.css">
+    
+    <!-- Primary Meta Tags -->
+    <title>Cyber192. - Network & System Tools | Free IT Administration Resources</title>
+    <meta name="title" content="Cyber192. - Network & System Tools | Free IT Administration Resources">
+    <meta name="description" content="Free network configuration generators, system administration tools, and cybersecurity resources. DHCP, OSPF, ACL generators, PowerShell scripts, Linux commands, and more.">
+    <meta name="keywords" content="network tools, system administration, cybersecurity, DHCP generator, OSPF generator, PowerShell, Linux commands, Windows Server, Active Directory">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0F172A">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Cyber192.">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/shield-icon-180.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="/shield-icon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/shield-icon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/shield-icon-76.png" sizes="76x76">
+    
+    <!-- Splash Screens -->
+    <link rel="apple-touch-startup-image" href="/shield-icon-2048.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/shield-icon-1668.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/shield-icon-1536.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/shield-icon-1125.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)">
+    <link rel="apple-touch-startup-image" href="/shield-icon-1242.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cyber192.com/">
+    <meta property="og:title" content="Cyber192. - Network & System Tools">
+    <meta property="og:description" content="Free network configuration generators, system administration tools, and cybersecurity resources. DHCP, OSPF, ACL generators, PowerShell scripts, Linux commands, and more.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cyber192.com/">
+    <meta property="twitter:title" content="Cyber192. - Network & System Tools">
+    <meta property="twitter:description" content="Free network configuration generators, system administration tools, and cybersecurity resources. DHCP, OSPF, ACL generators, PowerShell scripts, Linux commands, and more.">
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cyber192.com/">
+    
+    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6577929343208623" crossorigin="anonymous"></script>
+    <script>
+      window.adsbygoogle = window.adsbygoogle || [];
+      window.google_ad_client = "ca-pub-6577929343208623";
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW9RVXS4FB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VW9RVXS4FB');
+    </script>
+    
+    <!-- Preload critical assets -->
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="/shield-icon.svg" as="image" type="image/svg+xml">
+    
+    <!-- Add fetchpriority for important resources -->
+    <link rel="preload" href="/src/main.tsx" as="script" type="module" crossorigin fetchpriority="high">
+    <link rel="preload" href="/src/index.css" as="style" fetchpriority="high">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+    
+    <!-- Add loading="lazy" for below-the-fold images -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        if ('loading' in HTMLImageElement.prototype) {
+          images.forEach(img => {
+            if (img.dataset.src) {
+              img.src = img.dataset.src;
+            }
+          });
+        } else {
+          // Fallback for browsers that don't support lazy loading
+          const script = document.createElement('script');
+          script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+          document.body.appendChild(script);
+        }
+      });
+    </script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful');
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed:', err);
+            });
+        });
+      }
+    </script>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json">
   </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
